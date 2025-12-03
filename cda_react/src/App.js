@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import UseEffectSection from "./components/UseEffectSection";
 import ApiCallsSection from "./components/ApiCallsSection";
+import ContextApiSection from "./components/ContextApiSection";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <HeroSection />
         <UseEffectSection />
         <ApiCallsSection />
+        <ContextApiSection />
       </main>
 
       <Footer />
