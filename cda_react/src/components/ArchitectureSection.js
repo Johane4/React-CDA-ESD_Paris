@@ -1,6 +1,6 @@
 import "../styles/ArchitectureSection.css";
 
-function ArchitectureSection() {
+const ArchitectureSection = () => {
   return (
     <section id="architecture" className="architecture-section">
       <h2>Architecture d'un projet React</h2>
@@ -492,6 +492,6 @@ function ProductCard({ product }) {
       </div>
     </section>
   );
-}
+};
 
 export default ArchitectureSection;

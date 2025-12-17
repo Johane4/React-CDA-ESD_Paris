@@ -1,6 +1,6 @@
 import "../styles/Footer.css";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-line"></div>
@@ -11,6 +11,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
