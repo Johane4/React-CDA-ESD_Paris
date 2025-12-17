@@ -1,0 +1,99 @@
+.hero-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-size: 1.5em;
+  color: #e67e22;
+  border: none;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.hero-image {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-info {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.hero-info h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.date {
+  text-align: center;
+  font-size: 1.2em;
+  color: #7f8c8d;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.concepts h4 {
+  color: #e67e22;
+  margin-bottom: 15px;
+}
+
+.concepts ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.concepts li {
+  padding: 12px 0;
+  padding-left: 30px;
+  position: relative;
+  color: #555;
+  font-size: 1.05em;
+}
+
+.concepts li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #e67e22;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2em;
+  }
+
+  .hero-info {
+    padding: 25px;
+  }
+}
