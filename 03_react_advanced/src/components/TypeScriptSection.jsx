@@ -41,7 +41,7 @@ const TypeScriptSection = () => {
           <h4>Exemple concret</h4>
           <pre>
             <code>{`// ❌ SANS TypeScript (JavaScript)
-function calculatePrice(price, discount) {
+const calculatePrice = (price, discount) => {
   return price - discount; // Accepte n'importe quoi
 }
 
@@ -87,6 +87,36 @@ calculatePrice("100", 10); // ❌ ERREUR DÉTECTÉE IMMÉDIATEMENT
         <pre>
           <code>{`npx create-react-app my-app --template typescript`}</code>
         </pre>
+
+        <div className="info-box">
+          <h4>📝 Extensions de fichiers TypeScript</h4>
+          <ul>
+            <li>
+              <strong>.tsx</strong> → Composants React avec JSX
+            </li>
+            <li>
+              <strong>.ts</strong> → Logique pure / Types / Services
+            </li>
+          </ul>
+
+          <h4>✅ Configuration automatique</h4>
+          <p>
+            Lors de la création d'un projet React avec TypeScript, la
+            configuration est <strong>automatiquement générée</strong>. Le
+            fichier <code>tsconfig.json</code> contient tous les réglages
+            nécessaires pour faire fonctionner TypeScript avec React.
+          </p>
+
+          <h4>⚠️ Erreurs fréquentes</h4>
+          <ul>
+            <li>❌ Lancer les commandes npm hors du dossier projet</li>
+            <li>❌ Mélanger npm et yarn dans le même projet</li>
+            <li>
+              ❌ Modifier <code>tsconfig.json</code> sans comprendre les options
+            </li>
+            <li>❌ Supprimer les fichiers de déclaration TypeScript (.d.ts)</li>
+          </ul>
+        </div>
 
         <h4>2. Comprendre la syntaxe du typage : type: valeur</h4>
         <p>

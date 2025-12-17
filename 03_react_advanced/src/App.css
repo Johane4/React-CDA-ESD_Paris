@@ -49,7 +49,8 @@ p {
   color: #555;
 }
 
-ul, ol {
+ul,
+ol {
   line-height: 1.8;
   margin-bottom: 20px;
   padding-left: 30px;
@@ -64,7 +65,7 @@ code {
   background-color: #f4f4f4;
   padding: 2px 6px;
   border-radius: 3px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   color: #e67e22;
 }
 
@@ -90,7 +91,7 @@ pre code {
   border-radius: 8px;
   padding: 25px;
   margin: 20px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .warning-box {
@@ -119,13 +120,31 @@ pre code {
   margin-top: 0;
 }
 
+.info-box {
+  background-color: #e7f5ff;
+  border-left: 4px solid #17a2b8;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.info-box h4 {
+  color: #117a8b;
+  margin-top: 0;
+}
+
+.info-box ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .architecture-diagram {
   background-color: #f8f9fa;
   border: 2px solid #e67e22;
   border-radius: 8px;
   padding: 30px;
   margin: 30px 0;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   line-height: 1.6;
 }
 
@@ -141,13 +160,13 @@ pre code {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .highlight {
