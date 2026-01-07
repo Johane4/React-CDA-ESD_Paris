@@ -1,0 +1,12 @@
+import UserList from "./components/UserList";
+
+const App = () => {
+  return (
+    <div>
+      <h1>Tests unitaires - Intégration</h1>
+      <UserList />
+    </div>
+  );
+};
+
+export default App;
