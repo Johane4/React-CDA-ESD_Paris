@@ -275,15 +275,15 @@ npm run test:coverage
         <h4>Fonction à tester</h4>
         <pre>
           <code>{`// utils/math.js
-export function add(a, b) {
+export const add = (a, b) => {
   return a + b;
 }
 
-export function multiply(a, b) {
+export const multiply = (a, b) => {
   return a * b;
 }
 
-export function calculateDiscount(price, discountPercent) {
+export const calculateDiscount = (price, discountPercent) => {
   if (discountPercent < 0 || discountPercent > 100) {
     throw new Error('Discount must be between 0 and 100');
   }
@@ -331,7 +331,7 @@ describe('Math utilities', () => {
           <code>{`// components/Counter.jsx
 import { useState } from 'react';
 
-function Counter({ initialValue = 0 }) {
+const Counter = ({ initialValue = 0 }) => {
   const [count, setCount] = useState(initialValue);
 
   const handleIncrement = () => setCount(count + 1);
@@ -412,7 +412,7 @@ describe('Counter Component', () => {
           <code>{`// components/UserForm.jsx
 import { useState } from 'react';
 
-function UserForm({ onSubmit }) {
+const UserForm = ({ onSubmit }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
@@ -681,13 +681,13 @@ describe('UserList Component', () => {
         <h4>Ignorer des lignes du coverage</h4>
         <pre>
           <code>{`// Ignorer une ligne complète
-/* istanbul ignore next */
+/* ignore next */
 function neverCalled() {
   // ...
 }
 
 // Ignorer une ligne
-const x = 5; // istanbul ignore line`}</code>
+const x = 5; // ignore line`}</code>
         </pre>
       </div>
 
@@ -802,12 +802,12 @@ const invalidUser: User = {
         <h4>Fonction classique (ancienne syntaxe)</h4>
         <pre>
           <code>{`// Fonction classique sans typage
-function add(a, b) {
+const add = (a, b) => {
   return a + b;
 }
 
 // Fonction classique AVEC typage TypeScript
-function add(a: number, b: number): number {
+const add = (a: number, b: number): number => {
   return a + b;
 }
 
